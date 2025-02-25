@@ -5,6 +5,7 @@ import App from "./pages/App"
 import Services from './pages/Services'
 import Blog from './pages/Blog'
 import AboutUs from './pages/AboutUs'
+import ContactUs from './pages/ContactUs'
 
 const router = createBrowserRouter([
     {
@@ -22,6 +23,10 @@ const router = createBrowserRouter([
     {
         path: "/about-us",
         element: <AboutUs/>,
+    },
+    {
+        path: "/contact-us",
+        element: <ContactUs/>,
     }
 ])
 
