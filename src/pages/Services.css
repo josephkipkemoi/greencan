@@ -1,0 +1,333 @@
+/* @font-face {
+    font-family: 'LovelyHome';
+    src: url(/Fonts/LovelyHome-9aBZ.ttf);
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #E0EECC; 
+    margin: 0;
+    padding: 0;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 20px; 
+    padding-left: 80px;
+    padding-right: 80px; 
+    position: relative;
+}
+.card {
+    background-color: white;
+    padding: 15px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer; 
+}
+.card:hover {
+    transform: scale(1.05);
+}
+
+.image-container {
+    width: 100%;
+    height: 150px; 
+    overflow: hidden;
+    position: relative;
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.card h3 {
+    margin-top: 10px;
+    font-size: 18px;
+    color: #117A3D;
+    position: relative;
+    z-index: 2;
+}
+.image-container::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, white 100%);
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+
+.popup-content {
+    background-color: white;
+    width: 80vw; 
+    height: 80vh; 
+    padding: 20px;
+    border-radius: 10px;
+    position: relative;
+    overflow-y: auto;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 30px;
+    color: #117A3D;
+    cursor: pointer;
+}
+
+
+.popup-content h2 {
+    margin-top: 0;
+}
+
+.mainsec .topdiv img{
+    width: 100%;
+    height: 600px;
+}
+
+
+.mainsec .topdiv{
+    font-size: 20px;
+}
+.mainsec .topdiv h2{
+    color: #117A3D;
+    font-family: 'Nunito', sans-serif;
+    z-index: 2;
+    padding-left: 80px;
+    position: relative;
+    top: -450px;
+    font-weight: bolder;
+}
+
+.mainsec .topdiv p{
+    color: #404040;
+    font-family: 'Nunito', sans-serif;
+    z-index: 2;
+    padding-left: 80px;
+    position: relative;
+    top: -440px;
+    font-weight: bolder;
+}
+.mainsec .topdiv span{
+    color: #117A3D;
+    font-family: 'Nunito', sans-serif;
+}
+
+.mainsec .topdiv .arrow{
+    padding-left: 80px;
+    position: relative;
+    top: -470px;
+}
+.mainsec .topdiv .p2{
+    padding-left: 136px;
+    position: relative;
+    top: -537px ;
+    z-index: 2
+    
+}
+.mainsec .title{
+    font-family: 'LovelyHome', sans-serif ;
+    font-size: 150px;
+    position: relative;
+    top: -350px;
+    display: flex;
+    justify-content: center;
+}
+
+
+.pricing{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 200px;
+}
+.snip1404 {
+  font-family: 'Source Sans Pro', Arial, sans-serif;
+  color: #ffffff;
+  text-align: left;
+  font-size: 16px;
+  width: 100%;
+  max-width: 1000px;
+  margin: 50px 10px;
+}
+.snip1404 img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  z-index: -1;
+}
+.snip1404 .plan {
+  margin: 0;
+  width: 25%;
+  position: relative;
+  float: left;
+  overflow: hidden;
+  border: 3px solid #3ba704;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  background-color: #117A3D;
+}
+.snip1404 .plan:hover i,
+.snip1404 .plan.hover i {
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+}
+.snip1404 .plan:first-of-type {
+  border-radius: 8px 0 0 8px;
+}
+.snip1404 .plan:last-of-type {
+  border-radius: 0 8px 8px 0;
+}
+.snip1404 * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.25s ease-out;
+  transition: all 0.25s ease-out;
+}
+.snip1404 header {
+ background-color: #3ba704;
+  color: #ffffff;
+}
+.snip1404 .plan-title {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: relative;
+  margin: 0;
+  padding: 20px 20px 0;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
+.snip1404 .plan-title:after {
+  position: absolute;
+  content: '';
+  top: 100%;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 40px 300px 0 0;
+  border-color: rgba(0, 0, 0, 0.5) transparent transparent;
+}
+.snip1404 .plan-cost {
+  padding: 40px 20px 10px;
+  text-align: right;
+}
+.snip1404 .plan-price {
+  font-weight: 600;
+  font-size: 3em;
+}
+.snip1404 .plan-type {
+  opacity: 0.8;
+  font-size: 0.7em;
+  text-transform: uppercase;
+}
+.snip1404 .plan-features {
+  padding: 0 0 20px;
+  margin: 0;
+  list-style: outside none none;
+}
+.snip1404 .plan-features li {
+  padding: 8px 5%;
+}
+.snip1404 .plan-features i {
+  margin-right: 8px;
+  color: rgba(0, 0, 0, 0.5);
+}
+.snip1404 .plan-select {
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  text-align: center;
+}
+.snip1404 .plan-select a {
+  background-color: #3ba704;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 12px 20px;
+  font-size: 0.75em;
+  font-weight: 600;
+  border-radius: 20px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  display: inline-block;
+}
+.snip1404 .plan-select a:hover {
+  background-color: #3aa70450;
+}
+.snip1404 .featured {
+  margin-top: -10px;
+  border-color: #3ba704;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.4);
+  z-index: 1;
+  border-radius: 8px;
+}
+.snip1404 .featured .plan-select {
+  padding: 30px 20px;
+}
+@media only screen and (max-width: 767px) {
+  .snip1404 .plan {
+    width: 50%;
+  }
+  .snip1404 .plan-title,
+  .snip1404 .plan-select a {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+
+ 
+}
+@media only screen and (max-width: 440px) {
+  .snip1404 .plan {
+    width: 100%;
+  }
+}
+.snip1404 .featured {
+    margin-top: 0; 
+    border-color: #3ba704; 
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); 
+    z-index: auto; 
+    border-radius: 0; 
+  }
+  
+  .snip1404 .featured .plan-select {
+    padding: 20px;  
+  }
+  
+  .mainsec .img1{
+    width: 300px;
+    position: relative;
+    top: -630px;
+    left: 710px;
+  }
+
+.pricing .text p {
+  font-family: 'LovelyHome', sans-serif;
+  font-size: 100px;
+  z-index: 2;
+  position: absolute; 
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); 
+  width: auto;
+  height: auto;
+} */

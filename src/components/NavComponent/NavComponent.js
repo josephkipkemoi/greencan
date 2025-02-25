@@ -17,7 +17,7 @@ function NavComponent() {
                         <Link className="nav-link text-white" to="/services">Services</Link>
                     </li> 
                     <li className="nav-item">
-                        <a className="nav-link text-white" href="#">Blog</a>
+                        <Link className="nav-link text-white" to="/blog">Blog</Link>
                     </li>   
                     <li className="nav-item">
                         <a className="nav-link text-white" href="#">About Us</a>
