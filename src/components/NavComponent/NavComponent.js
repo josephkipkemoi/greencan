@@ -23,36 +23,10 @@ function NavComponent() {
                         <Link className="nav-link text-white" to="/about-us">About Us</Link>
                     </li> 
                     <li className="nav-item">
-                        <a className="nav-link text-white" href="#">Contact</a>
+                        <Link className="nav-link text-white" to="/contact-us">Contact</Link>
                     </li> 
                 </ul>
-                {/* <li className="nav-item dropdown">
-                    <a className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Dropdown
-                    </a>
-                    <div className="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a className="dropdown-item" href="#">Action</a>
-                        <a className="dropdown-item" href="#">Another action</a>
-                        <div className="dropdown-divider"></div>
-                        <a className="dropdown-item" href="#">Something else here</a>
-                    </div>
-                </li> */}
-            </div>
-          
-            {/* <ul className="nav-links">
-                <li><a href="./services.html">Services</a></li>
-                <li><a href="#blog">Blog</a></li>
-                <li><a href="#about-us">About Us</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-            <div className="profile">
-                <img src="profile.jpg" alt="Profile Picture"/>
-                <div className="dropdown">
-                    <a href="#dashboard">Dashboard</a>
-                    <a href="#settings">Settings</a>
-                    <a href="#logout">Logout</a>
-                </div>
-            </div> */}
+            </div>         
         </nav>
     )
 }
